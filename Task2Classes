@@ -1,0 +1,19 @@
+class Banka:
+  def krediBasvur(self):
+    print ("Kredi başvurusu yapıldı")
+  def krediHesapla(self):
+    print("Hesaplar yapıldı")
+
+banka=Banka()
+banka.krediBasvur()
+
+#self=this
+
+class Person:
+  def__init__(self,name,lastname):
+      self.name=name
+      self.lastname=lastname
+    
+  musteri1 = Person("Ahmet","Demiroğ")
+  musteri2 =Person("Sena","Özdoğan")
+  print(musteri1.name)
