@@ -1,0 +1,43 @@
+ogrenciler=["Sena Özdoğan","Yağmur Yazıcı", "Büşranur Çalık","k"]
+
+#1. Aldığı isim soy isim ile listeye öğrenci ekleyen
+def ogrenciEkle(count):
+  for i in range(count):
+  
+    eklenenIsım=input("Eklemek istediğiniz kişinin isim ve soyismini           yazın")
+    ogrenciler.append(eklenenIsım)
+    print(ogrenciler)
+
+#2.Aldığı isim soy isim ile eşleşen değeri listeden kaldıran
+def ogrenciKaldir():
+  print(ogrenciler)
+  silinecekIsim=input("Silmek istediğiniz kişiyi yazın")
+  ogrenciler.remove(silinecekIsim)
+  print(ogrenciler)
+  
+#3.Listeye birden fazla öğrenci eklemeyi mümkün kılan
+def birdenCokOgrenciEkle():
+  kayitsayisi=int(input("Kaç kisi kayıt edeceksiniz"))
+  for i in range(kayitsayisi):
+    ogrenciEkle(kayitsayisi)
+
+#4.Listedeki tüm öğrencileri tek tek ekrana yazdıran
+def ekranaYazdir():
+  for i in ogrenciler:
+    print(i)
+
+#5.Öğrencinin listedeki index numarası öğrenci numarası olarak kabul edildiğini düşünerek öğrencinin numarasını öğrenmeyi mümkün kılan
+def ogrenciNumarasi():
+  hangiOgrenci=input("Hangi öğrencinin numarasını öğrenmek istiyorsunuz?")
+  print((ogrenciler.index(hangiOgrenci))+1)
+  print(ogrenciler)
+
+#6.Listeden birden fazla öğrenci silmeyi mümkün kılan (döngü kullanınız)
+def CokluSil():
+  silinecekSayi = int(input("Silmek istediğiniz öğrenci sayısı: "))
+  i = 0
+  while(i < silinecekSayi):
+    silinenOgrenci = input("Silmek istediğiniz öğrencinin Adı Soyadını yazınız ")
+    ogrenciler.remove(silinenOgrenci)
+    i += 1
+    print(ogrenciler)
