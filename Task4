@@ -1,1 +1,16 @@
 
+Html Nedir?
+Web Sayfası oluşturmada kallanılan metin işaret dilidir.
+
+HTML Locators Nedir?
+Locators yer bulucu demektir.Locator bir testçinin üzerinde işlem yapacağı bir HTML DOM ögesi seçmesini sağlar.
+Locators'a birkaç örnek:
+ID
+Name
+ClassName
+TagName
+LinkText
+CssSelector
+XPath
+
+Selenium'da aksiyonlar (send_keys, click vb..)?
