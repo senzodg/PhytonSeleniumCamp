@@ -14,3 +14,10 @@ CssSelector
 XPath
 
 Selenium'da aksiyonlar (send_keys, click vb..)?
+
+get()-driver.get("")/ Bir web siteyi açmak istediğinde kullanılır.
+close()-driver.close()/Sekmeyi kapatmak için kullanılır.
+quit()-driver.quit()/Tarayıcıyı komple kapatmak için kullanılır.
+maximize_window()/Açılan sayfayı tam ekran yapmak için kullanılır.
+...
+
